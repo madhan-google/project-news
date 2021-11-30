@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg2"
+    tools:context=".NewsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:layout_marginRight="20dp"
+                />
+            <TextView
+                android:id="@+id/source_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="source name"
+                android:textSize="20sp"
+                />
+        </androidx.appcompat.widget.Toolbar>
+        <ImageView
+            android:id="@+id/favorite_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/linear_layout"
+            android:layout_alignRight="@id/linear_layout"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_add"
+            />
+        <ImageView
+            android:id="@+id/share_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/linear_layout"
+            android:layout_alignRight="@id/favorite_btn"
+            android:src="@drawable/ic_share"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/read_news"
+            android:layout_marginTop="5dp"
+            android:layout_alignTop="@id/linear_layout"
+            android:src="@drawable/ic_speak"
+            android:layout_alignRight="@id/share_btn"
+            android:layout_marginRight="50dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_margin="3dp"
+            android:layout_below="@id/toolbar"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="10dp" />
+
+            <com.google.android.gms.ads.AdView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/news_adview"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-5943796115602553/5451086664"
+                android:layout_marginBottom="15dp"
+                />
+
+            <TextView
+                android:id="@+id/title_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="Title : "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/author_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="Author : "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/publish_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="Published At : "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/content_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="15dp"
+                android:text="Content :\n"
+                android:inputType="textMultiLine"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/description_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:inputType="textMultiLine"
+                android:text="Description :\n"
+                android:layout_marginBottom="15dp"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/full_news_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="full news"
+                android:layout_marginBottom="15dp"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

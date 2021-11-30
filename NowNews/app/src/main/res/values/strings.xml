@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Now News</string>
+    <string name="API_KEY">e9ec123689494e179bb1b67a3e49c50a</string>
+    <string name="BASE_URL">https://newsapi.org/v2/</string>
+    <string name="science">SCIENCE</string>
+    <string name="world">WORLD</string>
+    <string name="sports">SPORTS</string>
+    <string name="environment">ENVIRONMENT</string>
+    <string name="society">SOCIETY</string>
+    <string name="fashion">FASHION</string>
+    <string name="business">BUSINESS</string>
+    <string name="culture">CULTURE</string>
+    <string name="headlines">TOP-HEADLINES</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

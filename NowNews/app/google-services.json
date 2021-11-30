@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "642842412385",
+    "project_id": "now-news-abc57",
+    "storage_bucket": "now-news-abc57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642842412385:android:26ecb92f3448c41de27120",
+        "android_client_info": {
+          "package_name": "com.codekiller.nownews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642842412385-pbktog2miqf7nkv6rid3554uvtl1p6fo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKE0s3xcPp5UtVE45Mu6ZL4q5nijaFMsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642842412385-pbktog2miqf7nkv6rid3554uvtl1p6fo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
